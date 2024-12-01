@@ -10,21 +10,13 @@ const soonPath = "M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8.5 2.5a.5.5 0 1 1-1 0 .5.5 
 
 
 
-
-
-
-
-
-
-
-
-
-
 // MENU MOBILE
-const menuToggle = document.getElementById('toggle-menu')
-const menu = document.getElementById('.menu ul')
+document.getElementById('toggle-menu').addEventListener('click', () => {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+});
 
-menuToggle.addEventListener('click', () => {
-    menu.classList.toggle('show')
-})
+
+
+
 

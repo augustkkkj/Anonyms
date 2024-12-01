@@ -12,32 +12,64 @@
 </head>
 <body>
     <header class="menu" id="menu">
-         <ul class="nav-links">
-            <li>
+        <ul class="nav-links">
+            <li class="dropdown">
                 <a href="#">MULHER</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Vestidos</a></li>
+                    <li><a href="#">Camisetas</a></li>
+                    <li><a href="#">Suéter</a></li>
+                    <li><a href="#">Short</a></li>
+                    <li><a href="#">Calça</a></li>
+                    <li><a href="#">Brincos</a></li>
+                    <li><a href="#">Pulseiras</a></li>
+                </ul>
             </li>
-            <li>
+            <li class="dropdown">
                 <a href="#">HOMEM</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Camisetas</a></li>
+                    <li><a href="#">Sueter</a></li>
+                    <li><a href="#">Short</a></li>
+                    <li><a href="#">Calça</a></li>
+                    <li><a href="#">Brincos</a></li>
+                    <li><a href="#">Pulseiras</a></li>
+                </ul>
             </li>
-            <li>
+            <li class="dropdown">
                 <a href="#">CRIANÇAS</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Camisetas</a></li>
+                    <li><a href="#">Sueter</a></li>
+                    <li><a href="#">Short</a></li>
+                    <li><a href="#">Calça</a></li>
+                    <li><a href="#">Brinquedos</a></li>
+                </ul>
             </li>
         </ul>
-           
+    
         <div class="logo">
-                <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
-            </div>
-           
-            <div class="wrapper1">
+            <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+        </div>
+    
+        <div class="wrapper1">
+            <div class="dropdown">
                 <a href="#">PERFIL</a>
-                    <i class="bi bi-bag-fill"></i>
-                    <i class="bi bi-sun-fill"></i>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Perfil</a></li>
+                    <li><a href="#">Alterar Dados</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
             </div>
-
-            <div id="toggle-menu">
-                <i class="bi bi-list"></i>
-            </div>
+            <a href="#">CONTATO</a>
+            <i class="bi bi-bag-fill"></i>
+        </div>
+    
+        <div id="toggle-menu">
+            <i class="bi bi-list"></i>
+        </div>
     </header>
+    
 
 
     <!-- HERO SECTION -->
@@ -82,7 +114,6 @@
 
 
     <main>
-        <section >
             <section class="shop destaques">
                 <h1 class="section-titu">DESTAQUES</h1>
                 <div class="shop-container">
@@ -90,7 +121,8 @@
                     <div class="card-produto"> <!-- PRIMEIRO PRODUTO CARD -->
                         <img src="assets/img/produtos/destaques/1.jpg" alt="1">
                         <h2 class="produt-titu">Vestido Botânico</h2>
-                        <span class="preco">R$ 50</span>
+                        <p class="preco">R$ 50</p>
+                        <div class="produts-info">
                         <div class="star">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
@@ -98,12 +130,16 @@
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-half"></i>
                         </div>
-                        <i class="bi bi-basket-fill add_saco"></i>
+                        <button class="btn-produt">
+                            <i class="bi bi-basket-fill add_saco"></i>
+                        </button>
+                        </div>
                     </div>
                     <div class="card-produto"> <!-- SEGUNDO PRODUTO CARD -->
                         <img src="assets/img/produtos/destaques/2.jpg" alt="2">
                         <h2 class="produt-titu">Vestido Botânico</h2>
-                        <span class="preco">R$ 20000</span>
+                        <p class="preco">R$ 20000</p>
+                        <div class="produts-info">
                         <div class="star">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
@@ -111,24 +147,33 @@
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                         </div>
-                        <i class="bi bi-basket-fill add_saco"></i>
+                        <button class="btn-produt">
+                            <i class="bi bi-basket-fill add_saco"></i>
+                        </button>
+                        </div>
                     </div>
                     <div class="card-produto"> <!-- TRERCEIRO PRODUTO CARD -->
                         <img src="assets/img/produtos/destaques/3.jpg" alt="3">
                         <h2 class="produt-titu">Vestido Botânico</h2>
-                        <span class="preco">R$ 5000000</span>
-                        <div class="star">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-half"></i>
+                        <p class="preco">R$ 5000000</p>
+                        <div class="produts-info">
+                            <div class="star">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <button class="btn-produt">
+                                <i class="bi bi-basket-fill add_saco"></i>
+                            </button>
                         </div>
-                        <i class="bi bi-basket-fill add_saco"></i>
                     </div>
                     <div class="card-produto"> <!-- QUARTO PRODUTO CARD -->
                         <img src="assets/img/produtos/destaques/4.jpg" alt="4">
                         <h2 class="produt-titu">Vestido Botânico</h2>
-                        <span class="preco">R$ 90000000</span>
+                        <p class="preco">R$ 90000000</p>
+                        <div class="produts-info">
                         <div class="star">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
@@ -136,10 +181,45 @@
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                         </div>
-                        <i class="bi bi-basket-fill add_saco"></i>
+                        <button class="btn-produt">
+                            <i class="bi bi-basket-fill add_saco"></i>
+                        </button>
+                        </div>
                     </div>
                 </div>
-        </section>
+         </section>
+
+          <section class="grid-container"> <!--===GRID LAYOUT IMG=== -->
+            <div class="container">
+                <div class="row">
+                    <div class="image-container"> <!-- IMAGEM 1 -->
+                        <img src="assets/img/produtos/grid layout/1.jpg" alt="1" class="image">
+                        <div class="overlay"> <a href="">
+                            <h1>NÃO SEI OQ COLOCAR</h1>
+                        </a>
+                    </div>
+                    </div>
+                    <div class="image-container"> <!-- IMAGEM 2 -->
+                        <img src="assets/img/produtos/grid layout/2.jpg" alt="2" class="image">
+                        <div class="overlay">
+                            <a href="">
+                                <h1>NÃO SEI OQ COLOCAR</h1>
+                            </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="image-container">  <!-- IMAGEM 3 -->
+                        <img src="assets/img/produtos/grid layout/3.jpg" alt="3" class="image">
+                        <div class="overlay">
+                            <a href="">
+                                <h1>NÃO SEI OQ COLOCAR</h1>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
