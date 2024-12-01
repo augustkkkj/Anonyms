@@ -81,10 +81,11 @@ body{
 
 
 /* ====HERO SECTION==== */
+
 .content {
     display: flex;
     flex-wrap: nowrap;
-    height: 100svh;
+    height: 100vh;
 }
 
 .content .item {
@@ -142,7 +143,6 @@ body{
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 5rem;
-    margin-left: 5.6rem;
 }
 
 
@@ -199,12 +199,6 @@ body{
 
 
 /* ======GRID GALERIA IMG====== */
-/* .container{
-    max-width: 1224PX;
-    width: 90%;
-    margin: auto;
-    padding: 40px 0;
-} */
 
 .container {
     display: flex;
@@ -278,14 +272,13 @@ body{
 
 
 
-
 /* ====DROPWDOWN MENU==== */
 .dropdown{
     position: relative;
 }
 
 .dropdown-menu{
-    opacity: 0;
+    display: none;
     position: absolute;
     top: 175%;
     left: 0;
@@ -294,7 +287,6 @@ body{
     padding: 10px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
-    transition: all .3s ease;
 }
 
 .dropdown-menu li{
@@ -307,8 +299,8 @@ body{
 }
 
 
-.dropdown a:hover + .dropdown-menu{
-    opacity: 1;
+.dropdown:hover  .dropdown-menu{
+    display: block;
 }
 
 #toggle-menu{
